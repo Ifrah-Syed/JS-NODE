@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+    <script>
+        // ALERT
+        alert("this ia a message");
+
+        // PROMPT
+        // let name=prompt("what is your name","guest")
+        // will save the name written in variable name and guest is by default(not necessary)
+        console.log(name);
+
+        // CONFIRM
+        let deletePost=confirm("do u really wonna delete this post");
+        //  OK gives true and cancel retuens false
+        if(deletePost){
+            console.log("your post has been deleted succesfully");
+            alert("your post has been deleted succesfully")
+        }
+        else{
+            console.log("not deleted")
+            alert("your post has not been deleted")
+        }
+        console.log(deletePost)
+    </script>
+</body>
+</html>

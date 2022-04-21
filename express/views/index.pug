@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#{title}</title>
+    style 
+        include ../static/style.css
+    <!-- includes style.css to pug -->
+    <!-- double dots and slash to go outside views directory  -->
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/"> Home</li></a>
+        <li><a href="/">About us</li></a>
+        <li><a href="/">services</li></a>
+      </ul>
+    </nav>
+
+<p> 
+    | #{content}
+</p>
+    <!-- | = see in pug documentation,in plain text -->
+    <!-- This is a plain html using pug -->
+
+    <form id="contact" action="/" method="post">
+         <input type="text" name="name" id="name" placeholder="enter your name">
+         <input type="text" name="age" id="age" placeholder="enter your age">
+         <input type="text" name="gender" id="name" placeholder="enter your gender">
+         <textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
+         <textarea name="more" id="more" cols="30" rows="10" placeholder="enter more about u"></textarea>
+         <button class="btn">submit</button>
+    </form>
+</body>
+</html>

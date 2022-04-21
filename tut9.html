@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <div class="container">this is about loops</div>
+    <script>
+      console.log("this is tut9");
+
+    //   FOR LOOP
+      let a = 0;
+      for (i = 0; i < 3; i++) {
+        console.log(i);
+      }
+
+
+    //   TO ITERATE ARRAYS
+      let friends = ["ifra", "samreen", "irtiza", "hanna", "deva"];
+      for (let index = 0; index < friends.length; index++) {
+        let element = friends[index];
+        console.log(element);
+      }
+      //  above can be written easily in JS using forEach
+      friends.forEach(function f(element) {
+          console.log(element+" with modern JS");
+      });
+
+    //  FOR OF LOOP 
+    for (element of friends){
+        console.log(element+" more easier JS");
+    }
+
+
+    // TO ITERATE OBJECTS
+    let employee={
+        name:"ifra",
+        salary:50000,
+        college:"NIT"
+    }
+    // we use for in loop for objects
+    for(key in employee){
+        console.log(`the ${key} of employee is ${employee[key]}`);
+    }
+    // employee[key] gives value in key
+
+
+    // WHILE LOOP
+    let j=3;
+    while(j>2){
+        console.log("j<4");
+        j--;
+    }
+
+    // DO WHILE LOOP
+    do {
+        console.log("j<4");
+        j--;
+    } while (j>2);
+    </script>
+  </body>
+</html>

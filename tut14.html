@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function tut
+    </div>
+    <script>
+    //     function greet(){
+    //  console.log('good morning');
+    //     } 
+    //     greet();  
+
+        // arrow function are shortcut of above
+        greet =()=> {
+            console.log("arrow function");
+        }
+        greet();
+        // further shortcut to above
+        greet =()=> console.log("arrow function");
+
+        let sum =(a,b)=>{
+            return a+b;
+     } 
+        // shortcut to above, no need of even return
+        let sum2=(a,b)=> a+b;
+        //  another shortcut
+        let half=a=>a/2;
+        // gives half of argument a, no need of brackets 
+
+        setTimeout(() => {
+            console.log("we are inside set time out")
+        }, 3000); 
+        // arrow function inside set time out is shortcut to greet function
+        
+        let obj1={
+            greeting:"good morning",
+            names:["ifra","harry","iqra","samurai"],
+            speak(){
+                this.names.forEach((student)=>
+                    console.log("kukdoo koo " + student)
+                )
+            },
+                // this means the object we r in
+                speak1(){
+                this.names.forEach((student)=>
+             console.log(this.greeting+" kukdoo koo "+student)
+                )
+                // 'this' inside arrow function points to greeting outside but if we use function, 'this' will only point inside i.e., it will find greeting inside the function
+                },
+                speak2(){
+                this.names.forEach(function s (student){
+             console.log(this.greeting+"kukdoo koo "+student)
+            }
+                )
+            }
+            
+        }
+        obj1.speak();
+        obj1.speak1();
+        obj1.speak2();
+        </script>
+
+</body>
+</html>

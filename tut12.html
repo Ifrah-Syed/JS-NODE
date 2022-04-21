@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+       time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is tut12")
+        function greet(name,byetext){
+            console.log("hello"+name+" "+byetext);
+        }
+
+        setTimeout(greet, 3000," ifra","bye");
+        // 3000 means 3000ms(3s)
+        // argument ifra and bye will concatinate name and byetext and it will appear after 3 sec
+        var timeout=setTimeout(greet, 3000," ifra","bye");
+        // gives a unique id for settimeout
+        console.log(timeout);
+         clearTimeout(timeout);
+        // set time out won't run (in case we have to ask user to sign up after 5 seconds but he did it before so we use this) will have to remove settimeout function and only get the id
+
+        //    SET INTERVAL
+        //   setInterval(greet,1000, " ifra","byeeee");
+        //   will appear after every 1 sec
+
+     intervalID=setInterval(greet,1000, " ifra","byeee");
+     clearInterval(intervalID);
+    //  clears set interval
+     console.log(intervalID);
+
+    //  CAN MAKE A TIME CLOCK USING THESE
+     function displayTime(){
+         time=new Date();
+         console.log(time);
+         document.getElementById("time").innerHTML = time;
+     }
+     setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

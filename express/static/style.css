@@ -1,0 +1,28 @@
+*{
+    background-color: green;
+    margin: 0px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 14px;
+}
+li{
+    list-style: none;
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+}
+
+input,textarea{
+    background-color: wheat;
+    display: block;
+    padding: 2px;
+}
+.btn{
+    height: 50px;
+    width: 23%;
+    background-color: tomato;
+    cursor: pointer;
+}

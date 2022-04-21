@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+    <div class="container">
+        its html
+    </div>
+    <script>
+        let myVar=34;
+        let myVar2="string";
+        let myVar3=true;
+        let myVar4=null;
+        let myVar5=undefined;
+        
+
+        // OBJECT
+        let employee={
+            name: "ifra",
+            salary: 50000,
+            college: "NIT",
+        }
+        console.log(employee)
+
+        // ARRAY OBJECT
+        let names=[1,4,2,"ifra",undefined]
+        console.log(names);
+        console.log(names[0])
+        // to print 0th index
+         
+
+        // another way of defining array
+        let names1=new Array(1,2,3,"ifra",undefined)
+        console.log(names1)
+        
+        // to get array length
+        console.log(names.length)
+
+        // to sort array
+        names=names.sort();
+        console.log(names)
+
+        // to push elements
+        names=names.push("this is pushed")
+        console.log(names)
+
+        // gives array with 23 undefined values
+        let names2=new Array(23);
+        console.log(names2);
+    </script>
+</body>
+</html>

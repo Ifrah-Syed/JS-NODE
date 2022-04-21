@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<body>
+    <div class="container"><span id="time"></span></div>
+    <script>
+        let now=new Date();
+        // Will give current time
+        // Date is an object
+        console.log(now);
+
+        let date=new Date(0);
+        // this give a reference time which is 1st jan 1970 and 0s millisec will give time after 0millisec of reference time
+        console.log(date);
+
+        // PRINTS GIVEN DATE
+        newDate= new Date("2019-09-30");
+        console.log(newDate)
+  
+        // ANOTHER WAY
+        newDate1=new Date(2020, 4, 6, 9, 32, 50);
+        // in the order of year, month,date, hours,minutes and seconds
+        console.log(newDate1);
+
+        let yr=newDate.getFullYear();
+        console.log(yr)
+        let dt=newDate.getDate();
+        console.log(dt);
+        let mn=newDate.getMonth();
+        console.log(mn+1);
+        // because js starts counting from 0
+        let hr=newDate.getHours();
+        console.log(hr);
+  
+        // set date
+        newDate.setDate(5);
+        console.log(newDate);
+        newDate.setDate(39);
+        // auto corrected to 9
+        console.log(newDate);
+
+        newDate.setMinutes(29);
+        console.log(newDate);
+        // similarly sethour and setseconds
+
+        function updateTime(){
+            time.innerHTML=new Date;
+        }
+    setInterval(updateTime,1000);
+
+    </script>
+</body>
+</html>

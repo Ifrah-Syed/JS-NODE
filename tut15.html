@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <div class="container">math object</div>
+   <script>
+let m=Math;
+console.log(m);
+// prints math object
+
+console.log("this vale of Math.E is ",Math.E)
+console.log("this vale of Math.LN2 is ",Math.LN2)
+console.log("this vale of Math.PI is ",Math.PI)
+console.log("this vale of Math.SQRT1_2 is ",Math.SQRT1_2)
+console.log("this vale of Math.LOG2E is ",Math.LOG2E)
+// prints the constants from math object
+
+//prints the functions from math object
+let a1=34.8774;
+let b1=89;
+console.log("the value of a and b is", a1,b1);
+console.log("the value of a and b rounded is",Math.round(a1), Math.round(b1));
+// rounds the number
+
+console.log("3 raised to the power 2 is",Math.pow(3,2));
+
+console.log("square root of 6 is",Math.sqrt(6));
+
+console.log("ceil of 5.4",Math.ceil(5.4));
+// ceil means rounded off to nearest highest integer
+
+console.log("floor of 6.8",Math.floor(6.8));
+// floor means rounded off to nearest lowest integer
+
+console.log("absolute value of -5.6 is", Math.abs(-5.6))
+
+// trignometric functions
+console.log("the value of sin(pi)",Math.sin(Math.PI))
+console.log("the value of cos(pi)",Math.cos(Math.PI))
+console.log("the value of tan(pi)",Math.tan(Math.PI))
+
+// min and max functions
+console.log("minimum value of 4,5,6 is",Math.min(4,5,6))
+
+// generating of random number
+let r=Math.random();
+console.log("the random no is",r);
+// gives no between 0 and 1
+
+// to generate between a and b = a+(b-a)*Math.random()
+let a=1;
+let b=100;
+let r1_100= a+(b-a)*Math.random();
+console.log(r1_100);
+</script> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <!-- json is used for data transportation through a networking string -->
+    <script>
+        let json_obj={
+            name:"ifra",
+            channel:"code with harry",
+            friend:"harry",
+            food:"biryani"
+        }
+        console.log(json_obj);
+        // to convert a complex object after converting to string is difficult, so we stringify it using json
+        myJsonStr=JSON.stringify(json_obj);
+        // above..returns string taking object
+        console.log(myJsonStr);
+
+        myJsonStr=myJsonStr.replace('harry','larry')
+        console.log(myJsonStr);
+
+        newJsonObj=JSON.parse(myJsonStr);
+        // parse takes string and converts to object
+        console.log(newJsonObj)
+    </script>
+</body>
+</html>

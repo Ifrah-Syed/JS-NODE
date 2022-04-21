@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #btn{
+            padding: 14px;
+            color: red;
+            border: 2px solid black;
+            background-color: goldenrod;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, similique, reiciendis necessitatibus quis quibusdam ex, cumque sed in natus quasi qui unde quae nulla distinctio doloribus. Porro, similique. Consequatur temporibus iure saepe cumque nostrum laborum minima eaque totam amet illum, autem ab iste. Corrupti numquam non ipsam dicta dolorum beatae repellat blanditiis quos vitae tenetur eveniet et quo illo quis, dolor corporis, illum sunt libero fuga eaque autem dolore aliquam eum hic. Dolor voluptate eaque, placeat laboriosam ut blanditiis? Animi nemo, ab veritatis laborum rem nobis architecto mollitia dolorum aspernatur nihil eum, nesciunt debitis magnam! Eaque eveniet dolorum expedita iure ipsa mollitia corrupti vitae ducimus nobis, veritatis iusto quidem numquam in voluptas eligendi natus commodi aliquid modi molestias. Repellendus placeat ipsam sunt quia deleniti, a, velit in distinctio iste asperiores dolore fuga quae eaque! Repellendus accusantium deleniti molestiae eum debitis natus nemo aperiam ipsam cum. Deleniti id tempore ratione eaque tenetur facilis ut eum explicabo, quod ad quas magni iusto ducimus rem sed reprehenderit repudiandae quam ab impedit nihil exercitationem! Excepturi ut explicabo molestias officiis repudiandae repellendus inventore eius suscipit est nemo, ab maiores. Nemo ullam magnam alias officiis ipsa deserunt quae odit molestias assumenda, maxime tenetur dignissimos minima et quod est rem. Ratione totam similique consequuntur eaque, dignissimos corporis maxime enim dicta perferendis ab et quis deleniti architecto omnis, at dolor commodi odio placeat nulla. Perspiciatis sint illum soluta illo fuga sequi.</p>
+    </div>
+    <!-- TO LISTEN CLICK EVENT -->
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+
+    <script>
+        // to listen event: alert when mouse inside the para
+     let para=document.getElementById('para');
+     para.addEventListener('mouseover',function run(){
+         alert('mouse inside')
+     })
+// mouseover is event listener
+        function toggleHide(){
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display!="none")
+            para.style.display='none';
+            else
+            para.style.display='block'
+        }
+        // this function will make display none when clicked and reverse
+    </script>
+</body>
+</html>

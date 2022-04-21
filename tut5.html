@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+        </ul>
+    </div>
+    <script>
+        var str1="This ia a string 1";
+        var str1="this is a string 2";
+        // allowed for var
+        console.log(str1);
+
+
+        // LET
+        // let b='u';
+        // let b='g';
+        // not allowed for let(another way of desclaring variable)
+        // console.log(b)
+         
+        let a='u'
+        {
+            let a='p';
+            console.log(a)
+            // gives p as output bcz it has block scope
+        }
+       console.log(a)
+    //    gives u as output
+
+    // CONST
+    const c="this cannot be changed";
+    console.log(c)
+
+    // IF ELSE
+    let age=34;
+    if(age>18){
+        console.log("u are 18+")
+    }
+    else{
+        console.log("u re not 18+")
+    }
+
+    //   SWITCH STATEMENT
+    const cups=4;
+    switch (cups) {
+        case 4:
+            console.log("cups=4")
+            break;
+        case 3:
+            console.log("cups=3")
+            break;
+        case 1:
+            console.log("cups=1")
+            break;
+    
+        default:
+            break;
+    }
+    </script>
+</body>
+</html>
